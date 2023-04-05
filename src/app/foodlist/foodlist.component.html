@@ -1,0 +1,26 @@
+<table class="table table-info">
+    <tr>
+<th>id</th>
+<th>name</th>
+<th>price</th>
+<th>style</th>
+<th>Admin action</th>
+</tr>
+<tr *ngFor="let fdd of fo">
+
+    <td>{{fdd.id}}</td>
+    <td>{{fdd.name}}</td>
+    <td>{{fdd.price}}</td>
+    <td>{{fdd.style}}</td>
+    <td><input type="button"  value="Delete" class="btn btn-danger" (click)="Deletefooditem(fdd.id)"></td>
+    <td><input type="button"  value="Update" class="btn btn-secondary"></td>
+    <td><input type="button"  value="Add to Cart" class="btn btn-success"></td>
+
+</tr>
+
+
+
+
+
+
+</table>
